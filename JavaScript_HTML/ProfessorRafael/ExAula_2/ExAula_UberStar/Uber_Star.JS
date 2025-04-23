@@ -13,6 +13,7 @@ Me informa qual é a distância em "Km" a ser percorrida ai mano?`))
 
     let velLuz = 300000
     let tempoCorrida = distPlaneta / velLuz
+    
     console.log(tempoCorrida)
 
     if (tempoCorrida < 1) {
