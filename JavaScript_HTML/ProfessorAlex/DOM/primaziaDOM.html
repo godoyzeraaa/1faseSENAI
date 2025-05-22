@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+     <h1>Bem vindo ao cadastro do usuario</h1>
+    <div>
+        <h3>por favor,preencha as informações abaixo</h3>
+        <label for="nome">Digite seu nome: </label>
+        <input type="text" id="nome">
+        <hr>
+        <label for="idade">Digite a sua idade</label>
+        <input type="number" id="idade">
+        <hr>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+<div>
+    <hr>
+    <h4 id="resultado"></h4>
+</div>
+    <script src="primaziaDOM.js"></script>
+
+
+
+
+    <h2> Notas escolares </h2>
+    <div>
+    <label for="nota1"> Digite a primeira nota: </label>
+    <input type="number" id="nota1">
+    <br><hr>
+    <label for="peso1"> Digite o peso primeira nota: </label>
+    <input type="number" id="peso1">
+    <br><hr>
+    <br><hr>
+    <label for="nota2"> Digite a segunda nota: </label>
+    <input type="number" id="nota2">
+    <br><hr>
+    <label for="peso2"> Digite o peso segunda nota: </label>
+    <input type="number"  id="peso2">
+    <br><hr>
+    <br><hr>
+    <label for="nota3"> Digite a terceira nota: </label>
+    <input type="number" id="nota3">
+    <br><hr>
+    <label for="peso3"> Digite o peso terceira nota: </label>
+    <input type="number"  id="peso3">
+    <br><hr>
+    <br><hr>
+    <label for="nota4"> Digite a quarta nota: </label>
+    <input type="number" id="nota4">
+    <br><hr>
+    <label for="peso4"> Digite o peso quarta nota: </label>
+    <input type="number"  id="peso4">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <div>
+    <div>
+    <p id="resultado"></p>
+    <p id="peso"></p>
+    <p id="media"></p>
+    <div>
+
+    <h1>Vamos calcular a media </h1>
+    <h3>Por favor, preencha as informações abaixo </h3>
+
+    <label for="Nota1">Digite a primeira nota: <label>
+    <input type="Number" id="Nota1">
+    <br><hr>
+    <label for="Nota2">Digite a segunda nota: <label>
+    <input type="Number" id="Nota2">
+    <br><hr> 
+    <label for="Nota3">Digite a terceira nota: <label>
+    <input type="Number" id="Nota3">
+    <br><hr> 
+    <label for="Nota4">Digite a quarta nota: <label>
+    <input type="Number" id="Nota4">
+    <br><hr>
+    <button onclick="calcularMedia()">media</button>
+    <hr>
+    <div>
+         <p id="resultado"></p>
+    <p id="media"></p>
+    </div>
+
+    <h1>Vamos calcular o indice de IMC</h1>
+    <h3>por favor, preencha as informações a abaixo</h3>
+
+    <label for="Nome">Digite o seu nome: </label>
+    <input type="text" id="Nome">
+    <br><hr>
+    <label for="Idade">Digite o seu idade: </label>
+    <input type="Number" id="Idade">
+    <br><hr>
+    <label for="Sexo">Digite o seu sexo: </label>
+    <input type="text" id="Sexo">
+    <br><hr>
+    <label for="Altura">Digite o seu altura: </label>
+    <input type="number" id="Altura">
+    <br><hr>
+    <label for="peso">Digite o seu peso: </label>
+    <input type="number" id="peso">
+    <br><hr>
+    <button onclick="CalcularIMC()">fisico</button>
+    <div>
+        <p id="IMC"></p>
+    </div>
+
+
+</body>
+</html>
