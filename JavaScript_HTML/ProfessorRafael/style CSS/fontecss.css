@@ -1,0 +1,47 @@
+#import
+   body {
+  font-family: Arial, sans-serif;
+  background-color :  #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.linha a {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.linha a:hover {
+  background-color: #0c52c4;
+}
+
+p {
+  margin-top: 30px;
+  font-style: italic;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}

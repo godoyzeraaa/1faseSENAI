@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de compra</title>
+    <link rel="stylesheet" href="dia2css.css">
+</head>
+
+<body>
+    <div class="container_principal" id="container_principal">
+        <div class="titulo">
+            <h1>lista de compras do alek</h1>
+            <button class="botao_cadastro" onclick="chamarcadastro()"> cadastrar novos iens</button>
+        </div>
+        <div class="conteudo_lista">
+            <ol id="minhalista">
+                
+            </ol>
+
+        </div>
+    </div>
+    <div class="container_cadastro" id="container_cadastro">
+        <div class="titulo">
+            <h1>cadastrar item</h1>
+            <button onclick="chamarVoltar()">voltar</button>
+        </div>
+        <div>
+            <div class="conteudo_cadastro">
+                <label for="nome"> nome do item</label>
+                <input type="text" name="nome" id="nome">
+                <button onclick="adicionarItem()">cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dia2css.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iniciorafa.css">
+</head>
+<body>
+    <nav>
+        <button onclick="mostrarLogin()">login</button>
+        <button onclick="mostrarCadastro()">cadastro</button>
+        <button onclick="mostrarProdutos()">produtos</button>
+    </nav>
+    <h1> Tela supimpa </h1>
+    <div id="login">
+        <h2>login</h2>
+        <div class="containerInput">
+        <label for="nome">Nome</label>
+        <input type="text" id="inpLogNome">
+        <br>
+        <label for="senha">Senha</label>
+        <input type="password" id="inplogSenha">
+        <br>
+        <button onclick="logar()">Logar</button>
+        <br>
+        </div>
+    </div>
+
+    <div id="cadastro">
+
+        <h2>cadastro</h2>
+         <div class="containerInput">
+         <label for="nome">Nome</label>
+        <input type="text" id="inpCadNome">
+        <br>
+         <div class="containerInput">
+         <label for="email">E-mail</label>
+        <input type="text" id="inpCadEmail">
+        <br>
+         <div class="containerInput"></div>
+        <label for="senha">Senha</label>
+        <input type="password" id="inpCadSenha">
+        <br>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <br>
+        </div>
+ </div>
+ <section id="produtos">
+    <h2>produtos</h2>
+    </section>
+ </section>
+    <script src="iniciorafa.js"></script>
+</body>
+</html>
