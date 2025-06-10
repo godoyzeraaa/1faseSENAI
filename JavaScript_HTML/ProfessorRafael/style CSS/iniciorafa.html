@@ -7,49 +7,57 @@
     <link rel="stylesheet" href="iniciorafa.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar" > 
         <button onclick="mostrarLogin()">login</button>
         <button onclick="mostrarCadastro()">cadastro</button>
         <button onclick="mostrarProdutos()">produtos</button>
     </nav>
-    <h1> Tela supimpa </h1>
-    <div id="login">
-        <h2>login</h2>
-        <div class="containerInput">
+    <main>
+
+        
+        <!-- <h1> Tela login/cadastro </h1> -->
+        <section id="login">
+            <h1>login</h1>
+        </div class="containerInput">
         <label for="nome">Nome</label>
         <input type="text" id="inpLogNome">
         <br>
         <label for="senha">Senha</label>
         <input type="password" id="inplogSenha">
         <br>
+        <button onclick="mostrarCadastro()" class="bt-secundario">nao tem cadastro?</button>
+        <br>
         <button onclick="logar()">Logar</button>
         <br>
-        </div>
     </div>
+</section>
 
-    <div id="cadastro">
-
-        <h2>cadastro</h2>
-         <div class="containerInput">
-         <label for="nome">Nome</label>
+<section id="cadastro">
+    
+    <h1>cadastro</h1>
+    <div class="containerInput">
+        <label for="nome">Nome</label>
         <input type="text" id="inpCadNome">
         <br>
-         <div class="containerInput">
-         <label for="email">E-mail</label>
-        <input type="text" id="inpCadEmail">
-        <br>
-         <div class="containerInput"></div>
-        <label for="senha">Senha</label>
-        <input type="password" id="inpCadSenha">
-        <br>
-        <button onclick="cadastrar()">Cadastrar</button>
-        <br>
+        <div class="containerInput">
+            <label for="email">E-mail</label>
+            <input type="text" id="inpCadEmail">
+            <br>
+            <div class="containerInput"></div>
+            <label for="senha">Senha</label>
+            <input type="password" id="inpCadSenha">
+            <br>
+            <button onclick="mostrarLogin()" class="bt-secundario">Ja possuo cadastro</button>
+            <br>
+            <button onclick="cadastrar()">Cadastrar</button>
+            <br>
         </div>
- </div>
- <section id="produtos">
+    </div>
+</section>
+<section id="produtos">
     <h2>produtos</h2>
-    </section>
- </section>
+</section>
+</main>
     <script src="iniciorafa.js"></script>
 </body>
 </html>

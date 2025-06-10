@@ -1,28 +1,33 @@
 //let nome,email,senha
 inicializar()
+let usuarios = []
 
-let usuario = {
-    nome: '',
-    email:'',
-    senha: '',
+//let nomeTeste = ["usuario 1", "usuario 2"]
 
-}
+
 function cadastrar(){
-    usuario.nome = document.getElementById("inpCadNome").value
-    usuario.email = document.getElementById("inpCadEmail").value
-    usuario.senha = document.getElementById("inpCadSenha").value
+    let usuario = {
+    nome : document.getElementById("inpCadNome").value,
+    email : document.getElementById("inpCadEmail").value,
+    senha : document.getElementById("inpCadSenha").value,
+    }
+    usuarios.push( usuario)
+
     alert ("cadastrado com sucesso! ")
+
     limparImputs()
     mostrarLogin()
 
-    console.log(usuario);
+    console.log(usuarios);
 }
 function logar(){
     let nome = document.getElementById("inpLogNome").value
     let senha = document.getElementById("inpLogSenha").value
-
-    if(nome === usuario.nome && senha === usuario.senha){
-        alert ("login efetuado com sucesso")
+    
+    for(let i=0; i<usuarios.length; i++)
+    if((nome === usuarios[i].nome || nome === usuarios[i].email) && senha === usuarios[i].senha){
+        alert ("login efetuado com sucesso! ola" + usuarios[i].nome)
+        [i].nome
         mostrarProdutos()
         limparImputs()
     }else{
@@ -43,9 +48,11 @@ function mostrarCadastro(){
 
 function mostrarProdutos(){
     esconderTodas()
+    
     document.getElementById("produtos").style.display = "flex"
+    document.getElementById("navbar").style.display = "flex"
 }
-
+    
 function esconderTodas(){
     document.getElementById("login").style.display = "none"
     document.getElementById("cadastro").style.display = "none"

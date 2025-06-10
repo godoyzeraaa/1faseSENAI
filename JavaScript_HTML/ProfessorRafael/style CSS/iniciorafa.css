@@ -9,7 +9,7 @@
      padding: 10px;
      margin: 10px;
      width: 300px;
-     height: 200px;
+     min-height: 100px;
      box-shadow: 10px 10px 12px ;
      background-image: radial-gradient(rgb(60, 5, 97),rgb(152, 6, 6)) ;
     color: white;
@@ -26,11 +26,14 @@
     padding: 10px;
     margin: 10px;
     width: 300px;
-    height: 200px;
+    min-height: 100px;
     box-shadow: 10px 10px 12px;
     background-image: radial-gradient(rgb(60, 5, 97),rgb(152, 6, 6)) ;
     color: white;
     
+}
+#navbar {
+    display: none;
 }
 #produtos{
     display: none;
@@ -64,4 +67,20 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bt-secundario{
+    background-color: #eee;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+
 }
